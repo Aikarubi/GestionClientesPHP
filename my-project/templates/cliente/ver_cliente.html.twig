@@ -1,0 +1,108 @@
+{% block body %}
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table {
+            width: 70%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+
+    <h1>Detalles del Cliente</h1>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <td>{{ cliente.getId() }}</td>
+        </tr>
+
+        <tr>
+            <th>Nombre</th>
+            <td>{{ cliente.getNombre() }}</td>
+        </tr>
+
+        <tr>
+            <th>Dirección</th>
+            <td>{{ cliente.getDirec() }}</td>
+        </tr>
+
+        <tr>
+            <th>Ciudad</th>
+            <td>{{ cliente.getCiudad() }}</td>
+        </tr>
+
+        <tr>
+            <th>Estado</th>
+            <td>{{ cliente.getEstado() }}</td>
+        </tr>
+
+        <tr>
+            <th>Código Postal</th>
+            <td>{{ cliente.getCodPostal() }}</td>
+        </tr>
+
+        <tr>
+            <th>Área</th>
+            <td>{{ cliente.getArea() }}</td>
+        </tr>
+
+        <tr>
+            <th>Teléfono</th>
+            <td>{{ cliente.getTelefono() }}</td>
+        </tr>
+
+        <tr>
+            <th>Límite de Crédito</th>
+            <td>{{ cliente.getLimiteCredito() }}</td>
+        </tr>
+
+        <tr>
+            <th>Observaciones</th>
+            <td>{{ cliente.getObservaciones() }}</td>
+        </tr>
+    </table>
+
+
+{% endblock %}
